@@ -33,6 +33,7 @@ public class WebSocketChatServer {
     @OnOpen
     public void onOpen(Session session) {
         //TODO: add on open connection.
+
     }
 
     /**

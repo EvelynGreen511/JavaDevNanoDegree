@@ -2,6 +2,7 @@ package edu.udacity.java.nano;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -11,6 +12,7 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @RestController
+@ComponentScan
 public class WebSocketChatApplication {
 
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class WebSocketChatApplication {
      */
     @GetMapping("/")
     public ModelAndView login() {
-        return new ModelAndView("/login");
+        return new ModelAndView("login");
     }
 
     /**
@@ -31,6 +33,6 @@ public class WebSocketChatApplication {
     @GetMapping("/index")
     public ModelAndView index(String username, HttpServletRequest request) throws UnknownHostException {
         //TODO: add code for login to chatroom.
-        return null;
+        return new ModelAndView("login");
     }
 }
