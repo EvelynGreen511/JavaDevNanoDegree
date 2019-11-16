@@ -17,7 +17,7 @@ public class LoginController {
         return "/login";
     }
 
-    @RequestMapping(value = "/chat", method = RequestMethod.POST)
+    @RequestMapping(value = "/chat", method = RequestMethod.GET)
     public String loginChat(@Valid User user, BindingResult result, Model model) {
 
         if(result.hasErrors()) {

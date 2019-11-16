@@ -37,6 +37,9 @@
                     </div>
                     <div class="mdui-container" style="padding:20px 35px">
                         <!-- TODO: add a send button to send message -->
+                        <button class="mdui-btn mdui-color-theme-accent mdui-ripple"
+                                onclick="sendMsgToServer()">Send (Enter)
+                        </button>
                         <button class="mdui-btn mdui-color-theme mdui-ripple"
                                 onclick="clearMsg()">Clear
                         </button>
@@ -56,8 +59,10 @@
                         <i class="mdui-icon material-icons">face</i></span>
                     <span class="mdui-chip-title">Online Users</span>
                     <!-- TODO: check online number num -->
+                    <span class="mdui-chip-title chat-num">0</span>
                 </div>
                 <!-- TODO: add a message container -->
+                <div id="message-container" class="message-container"></div>
             </div>
 
         </div>
@@ -97,6 +102,20 @@
                     '<div class="mdui-card" style="margin: 10px 0;">' +
                     '<div class="mdui-card-primary">' +
                     '<div class="mdui-card-content message-content">' + message.username + "：" + message.msg + '</div>' +
+                    '</div></div>');
+            }
+            else if(message.type === 'ENTER') {
+                $messageContainer.append(
+                    '<div class="mdui-card" style="margin: 10px 0;">' +
+                    '<div class="mdui-card-primary">' +
+                    '<div class="mdui-card-content message-content">' + message.username + ' has joined the server </div>' +
+                    '</div></div>');
+            }
+            else if (message.type === 'LEAVE') {
+                $messageContainer.append(
+                    '<div class="mdui-card" style="margin: 10px 0;">' +
+                    '<div class="mdui-card-primary">' +
+                    '<div class="mdui-card-content message-content">' + message.username + ' has left the server </div>' +
                     '</div></div>');
             }
             $('.chat-num').text(message.onlineCount);

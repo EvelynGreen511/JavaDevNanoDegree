@@ -12,7 +12,6 @@
         <div class="input_outer">
             <span class="u_user"></span>
             <input id="username" name="username" class="text" type="text" placeholder="Username">
-            <!--span th:errors="${user.username}" style="color:red"></span-->
         </div>
         <div class="mb2">
             <a class="act-but submit" onclick="login()">Login</a>
@@ -27,9 +26,8 @@
      */
     function login() {
         // TODO: complete the login function
-        // TODO: username bereits in benutzung? fehler
 
-        $('form').attr('method', 'post');
+        $('form').attr('method', 'get');
         $('form').attr('action', "chat");
         $('form').submit();
 
