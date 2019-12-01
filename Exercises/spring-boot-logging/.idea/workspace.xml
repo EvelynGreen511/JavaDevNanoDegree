@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b376b895-69b7-4c7d-865f-d77e22ba18da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/java/edu/udacity/java/nano/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project Chatroom/edu.udacity.java.nano/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
