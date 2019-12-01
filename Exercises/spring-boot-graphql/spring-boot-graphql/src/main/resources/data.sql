@@ -1,0 +1,16 @@
+--INSERT INTO location (id, name, address) VALUES (1, 'ATL Airport','Atlanta airport location');
+--INSERT INTO location (id, name, address) VALUES (2, 'MIA Airport','Miami airport location');
+--INSERT INTO location (id, name, address) VALUES (3, 'LAX Airport','Los Angeles airport location');
+--INSERT INTO location (id, name, address) VALUES (4, 'PHX Airport','Phoenix airport location');
+--INSERT INTO location (id, name, address) VALUES (5, 'ORD Airport','Chicago airport location');
+INSERT INTO dog (id, name, breed, origin) VALUES (1, 'Nelly', 'Standard Poodle', 'thorougbred');
+INSERT INTO dog (id, name, breed, origin) VALUES (2, 'Sammy', 'Havanese', 'thorougbred');
+INSERT INTO dog (id, name, breed, origin) VALUES (3, 'Dobby','Bolonka Svetna','thorougbred');
+INSERT INTO dog (id, name, breed, origin) VALUES (4, 'Shila', 'Bolonka Svetna','thorougbred');
+INSERT INTO dog (id, name, breed, origin) VALUES (5, 'Smiley', 'Collie', 'thorougbred');
+INSERT INTO dog (id, name, breed, origin) VALUES (6, 'Puppi', 'Mixie', 'crossbreed');
+INSERT INTO dog (id, name, breed, origin) VALUES (7, 'Fluffy', 'Pomeranian', 'Mountain View, CA');
+INSERT INTO dog (id, name, breed, origin) VALUES (8, 'Spot', 'Pit Bull', 'Austin, TX');
+INSERT INTO dog (id, name, breed, origin) VALUES (9, 'Ginger', 'Cocker Spaniel', 'Kansas City, KS');
+INSERT INTO dog (id, name, breed, origin) VALUES (10, 'Lady', 'Direwolf', 'The North');
+INSERT INTO dog (id, name, breed, origin) VALUES (11, 'Sasha', 'Husky', 'Buffalo, NY');

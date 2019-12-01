@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import edu.udacity.java.nano.model.Message;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpSession;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
@@ -44,9 +45,6 @@ public class WebSocketChatServer {
     public void onOpen(Session session) throws IOException {
         //TODO: add on open connection.
         onlineSessions.put(session.getId(), session);
-
-        Message message = new Message(session.getId(), Message.TYPE.ENTER, onlineSessions.size());
-        sendMessageToAll(new Gson().toJson(message));
     }
 
     /**
@@ -57,7 +55,14 @@ public class WebSocketChatServer {
         //TODO: add send message.
         Gson gson = new Gson();
         Message msg = gson.fromJson(jsonStr, Message.class);
-        msg.setType(Message.TYPE.SPEAK);
+
+        if(msg.getMsg() != null && !msg.getMsg().trim().isEmpty()) {
+            msg.setType(Message.TYPE.SPEAK);
+        }
+        else {
+            msg.setType(Message.TYPE.ENTER);
+        }
+
         msg.setOnlineCount(onlineSessions.size());
         sendMessageToAll(gson.toJson(msg));
     }

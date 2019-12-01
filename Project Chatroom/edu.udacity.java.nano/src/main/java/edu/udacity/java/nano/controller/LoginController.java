@@ -7,6 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Resource;
 import javax.validation.Valid;
 
 @Controller
@@ -17,7 +18,7 @@ public class LoginController {
         return "/login";
     }
 
-    @RequestMapping(value = "/chat", method = RequestMethod.GET)
+    @RequestMapping(value = "/chat")
     public String loginChat(@Valid User user, BindingResult result, Model model) {
 
         if(result.hasErrors()) {

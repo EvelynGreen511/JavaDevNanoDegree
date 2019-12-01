@@ -18,15 +18,12 @@ public class Message {
 
     public Message() {}
 
-    public Message(String msg, int onlineCount) {
-        this.msg = msg;
-        this.onlineCount = onlineCount;
+    public Message(String username) {
+        this.username = username;
     }
 
-    public Message(String msg, String username, Enum type, int onlineCount) {
+    public Message(String msg, int onlineCount) {
         this.msg = msg;
-        this.username = username;
-        this.type = type;
         this.onlineCount = onlineCount;
     }
 
@@ -36,8 +33,11 @@ public class Message {
         this.onlineCount = onlineCount;
     }
 
-    public Message(String username) {
+    public Message(String msg, String username, Enum type, int onlineCount) {
+        this.msg = msg;
         this.username = username;
+        this.type = type;
+        this.onlineCount = onlineCount;
     }
 
     public String getMsg() {
