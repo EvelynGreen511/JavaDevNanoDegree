@@ -17,7 +17,7 @@ public class LoginController {
 
     @RequestMapping("/login")
     public String login(User user) {
-        return "/login";
+        return "login";
     }
 
     @RequestMapping(value = "/chat")
@@ -25,10 +25,10 @@ public class LoginController {
 
         if(result.hasErrors()) {
             System.out.println("Validation Error username");
-            return "/login";
+            return "login";
         }
 
         model.addAttribute("username", user.getUsername());
-        return "/chat";
+        return "chat";
     }
 }
